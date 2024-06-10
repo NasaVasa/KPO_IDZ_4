@@ -64,3 +64,26 @@ docker compose up --build
 1) Все 3 котейнера покрыты healthcheck'ами. Они позволяют сделать так, чтобы сервисы не начинали обрабатывать запросы, пока не будут готовы к этому.
 2) Были настроены `cookie` для передачи `JWT токена`. Это позволяет избежать постоянной вставки параметра `JWT` в каждый эндпоинт.
 3) Был добавлен скрипт `migrations.sql` для автоматических миграций при запуске. Так же скрипт заполняет таблицу `station` тестовыми данными.
+
+### Cписок использованных технологий
+1. io.jsonwebtoken: jjwt (0.9.1)
+2. org.springdoc: springdoc-openapi-starter-webmvc-ui (2.3.0)
+3. org.springframework.boot: spring-boot-starter-actuator
+4. org.springframework.boot: spring-boot-starter-data-jpa
+5. org.springframework.boot: spring-boot-starter-web
+6. com.fasterxml.jackson.module: jackson-module-kotlin
+7. org.jetbrains.kotlin: kotlin-reflect
+8. org.jetbrains.kotlin: kotlin-stdlib
+9. org.postgresql: postgresql (runtime)
+10. org.springframework.security: spring-security-test (test)
+11. javax.xml.bind: jaxb-api (2.3.1)
+12. org.springframework.security: spring-security-crypto
+13. org.springframework.boot: spring-boot-test (test)
+14. org.testng: testng (RELEASE) (test)
+15. junit: junit (test)
+16. org.junit.jupiter: junit-jupiter (test)
+17. org.springframework.boot: spring-boot-test-autoconfigure (test)
+18. io.swagger: swagger
+19. org.postgresql: postgresql
+
+Swagger документация - https://swagger.io/docs/
